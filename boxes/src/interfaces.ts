@@ -1,8 +1,11 @@
 export interface BoxInterface {
   id:string;
-  width:number;
-  height:number;
+  width: string;
+  height: string;
   backgroundColor:string;
+}
+
+export interface BoxPropInterface extends BoxInterface {
   remove: Function;
 }
 
@@ -13,5 +16,5 @@ export interface BoxFormInterface {
 }
 
 export interface BoxListInterface {
-  createBox: Function
+  createBox: (box: BoxInterface) => void
 }

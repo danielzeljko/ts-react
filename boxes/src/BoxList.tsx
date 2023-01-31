@@ -15,7 +15,10 @@ function BoxList(): JSX.Element {
 
   /** add box with given { id, width, height, backgroundColor } */
 
+  // how are the height and width props being coverted from string to number types
   function add(newBox:BoxInterface): void {
+    console.log("add", typeof newBox.height)
+
     setBoxes(boxes => [...boxes, newBox]);
   }
 

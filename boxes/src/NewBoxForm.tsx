@@ -35,6 +35,7 @@ function NewBoxForm({ createBox }: BoxListInterface): JSX.Element {
 
   function handleSubmit(evt: React.FormEvent): void {
     evt.preventDefault();
+    console.log("submit", typeof formData.height)
     createBox({ ...formData, id: uuid() });
     setFormData({ height: "", width: "", backgroundColor: "" });
   }

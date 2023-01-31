@@ -1,4 +1,4 @@
-import { BoxInterface } from "./interfaces";
+import { BoxPropInterface } from "./interfaces";
 
 /** Colored box presentation
  *
@@ -12,7 +12,7 @@ import { BoxInterface } from "./interfaces";
  * BoxList -> Box
  */
 
-function Box({ id, width = 5, height = 5, backgroundColor, remove }: BoxInterface): JSX.Element {
+function Box({ id, width = "5", height = "5", backgroundColor, remove }: BoxPropInterface): JSX.Element {
 
   /** Remove a box. */
 
