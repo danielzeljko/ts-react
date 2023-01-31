@@ -3,7 +3,7 @@ export interface BoxInterface {
   width:number;
   height:number;
   backgroundColor:string;
-  remove?: Function;
+  remove: Function;
 }
 
 export interface BoxFormInterface {
